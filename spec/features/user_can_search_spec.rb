@@ -20,7 +20,8 @@ feature "User can search" do
 
     expect(results.count).to eq(10)
   end
+  # And the stations should be limited to Electric and Propane
+  
 end
 
-# And the stations should be limited to Electric and Propane
 # And for each of the stations I should see Name, Address, Fuel Types, Distance, and Access Times
