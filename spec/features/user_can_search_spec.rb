@@ -16,7 +16,7 @@ feature "User can search" do
     expect(current_path).to eq "/search"
     expect(page).to have_content("Stations Near Zip Code")
     # Then I should see a list of the 10 closest stations within 6 miles sorted by distance
-    results = Search.last.station
+    results = Search.last.stations
 
     expect(results.count).to eq(10)
   end
