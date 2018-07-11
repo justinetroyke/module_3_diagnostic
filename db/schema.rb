@@ -10,6 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20180711160825) do
+
+  create_table "searches", force: :cascade do |t|
+    t.integer "zip"
+  end
 
 end
