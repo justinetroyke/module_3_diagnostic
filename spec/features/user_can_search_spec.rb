@@ -6,8 +6,10 @@ feature "User can search" do
 
     visit '/'
 
-    fill_in 'Search', with: zip
-    click_on "Locate"
+    within(".navbar") do
+      fill_in "q", with: zip
+      click_on "Locate"
+    end
 
     expect(page).to have_current_path('/search')
   end

@@ -14,17 +14,22 @@ gem 'figaro'
 
 group :development, :test do
   gem 'byebug'
+  gem 'pry'
+  gem 'factory_bot_rails'
   gem 'rspec-rails'
 end
 
 group :development do
   gem 'web-console', '~> 3.5.1'
   gem 'listen'
+
 end
 
 group :test do
   gem 'vcr'
   gem 'webmock'
   gem 'capybara'
+  gem 'simplecov'
+  gem 'launchy'
+  gem 'shoulda-matchers'
 end
-
